@@ -8,5 +8,28 @@
 #+latex_header: \usepackage{latex/macros}
 #+latex_header: \usepackage{latex/header}
 #+latex_header: \usepackage{latex/optics}
+#+latex_header: \usepackage{latex/boldcats}
 #+latex_header: \usepackage{float}
 #+latex_header: \allowdisplaybreaks
+
+Consider the functor $\odot \colon \Set \times \Set \to \Set$ given by $A \odot B \coloneqq A + B + A \times B$. This can be shown to be a monoidal product, with $0$ its unit.
+
+The associated optic is the following one.
+\begin{align*}
+& \int^M (S \to A + M + A \times M) \times (B + M + B \times M \to T) \\
+\cong & \\
+& \int^M (S \to A + M + A \times M) \times (B \to T) \times (M \to T) \times (B \times M \to T) \\
+\cong & \\
+& \int^M (S \to A + M + A \times M) \times (B \to T) \times (M \to (B \to T) \times T) \\
+\cong & \\
+& (S \to A + (B \to T) \times T + A \times (B \to T) \times T) \times (B \to T).
+\end{align*}
+
+We call *Where profunctors* to the Tambara modules for the action of $\odot$. That is to say that they are profunctors $P \colon \Set \times \Set \to \Set$ endowed with a map
+\[
+w \colon P(A,B) \to P(A + M + A \times M, B + M + B \times M)
+\]
+natural on $A,B$ and dinatural on $M$.  By the profunctor representation theorem, the previous optic has the following Yoneda representation.
+\[
+\int_{P \in \mathbf{Where}} P(A,B) \to P(S,T).
+\]
