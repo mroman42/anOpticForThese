@@ -1,0 +1,12 @@
+#+TITLE: An Optic For These
+#+Author: Mario Román
+#+latex_class: article
+#+latex_class_options: [11pt, dvipsnames]
+#+options: todo:nil toc:nil ':t
+
+#+latex_header: \pdfoutput=1
+#+latex_header: \usepackage{latex/macros}
+#+latex_header: \usepackage{latex/header}
+#+latex_header: \usepackage{latex/optics}
+#+latex_header: \usepackage{float}
+#+latex_header: \allowdisplaybreaks
