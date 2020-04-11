@@ -1,4 +1,5 @@
 #+TITLE: An Optic For These
+#+Subtitle: a.k.a. I haven't checked, but has anyone tried this?
 #+Author: Mario Román
 #+latex_class: article
 #+latex_class_options: [11pt, dvipsnames]
